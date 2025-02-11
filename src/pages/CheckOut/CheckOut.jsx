@@ -25,7 +25,7 @@ export default function CheckOut() {
         token: localStorage.getItem("token")
       },
       params:{
-        url: "https://aremo90.github.io/Home/"
+        url: "https://aremo90.github.io/Home/#"
       }
     })
     setIsLoading(false)

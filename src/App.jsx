@@ -41,7 +41,7 @@ function App() {
         { path: '/wishList', element: <ProtectedRoute><WishList /></ProtectedRoute> },
         { path: '/CheckOut/:cartId', element: <ProtectedRoute><CheckOut /></ProtectedRoute> },
         { path: '/productDetails/:id', element: <ProtectedRoute><ProductDetails /></ProtectedRoute> },
-        { path: '/AllOrders', element: <ProtectedRoute><AllOrders /></ProtectedRoute> },
+        { path: '/allOrders', element: <ProtectedRoute><AllOrders /></ProtectedRoute> },
         { path: '/*', element: <NotFound /> },
       ]
     }
