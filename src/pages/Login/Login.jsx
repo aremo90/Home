@@ -59,10 +59,10 @@ export default function Login() {
           <Button disabled={isLoading} type='submit' className='md:col-span-2 md:mt-5' isLoading={isLoading} color="primary">
             LogIn
           </Button>
-          {errMsg && <p className='text-red-600 text-center'>{errMsg}</p>}
-          <div className='flex flex-col'>
-            <span>Don't have account<Button as={Link} className='text-teal-900' to={"/register"} variant="flat">Register Now</Button></span>
-            <span>Can't remember Password<Button as={Link} className='text-indigo-700' to={"/forgetPassword"} variant="flat">Forget Password</Button></span>
+          <div className='flex flex-col gap-3'>
+            <span>Don't have account <Button as={Link} className='text-blue-400' to={"/register"} variant="flat">Register Now</Button></span>
+            <span>Can't remember Password<Button as={Link} className='text-blue-700' to={"/forgetPassword"} variant="flat">Forget Password</Button></span>
+            {errMsg && <p className='text-red-600 text-center'>{errMsg}</p>}
           </div>
         </div>
       </form>
