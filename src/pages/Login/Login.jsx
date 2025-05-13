@@ -60,12 +60,13 @@ export default function Login() {
             LogIn
           </Button>
           <div className='flex flex-col gap-3'>
-            <span>Don't have account <Button as={Link} className='text-blue-400' to={"/register"} variant="flat">Register Now</Button></span>
-            <span>Can't remember Password<Button as={Link} className='text-blue-700' to={"/forgetPassword"} variant="flat">Forget Password</Button></span>
-            {errMsg && <p className='text-red-600 text-center'>{errMsg}</p>}
+            <span>Don't have account <Button as={Link} className='text-blue-400 bg-black' to={"/register"} variant="flat">Register Now</Button></span>
+            <span>Can't remember Password <Button as={Link} className='text-blue-400  bg-black' to={"/forgetPassword"} variant="flat">Forget Password</Button></span>
           </div>
         </div>
+        {errMsg && <span className='text-red-600 text-center'>{errMsg}</span>}
       </form>
+
     </div>
   )
 }
